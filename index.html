@@ -1,0 +1,486 @@
+<html>
+<head>
+	<title>HTML Email Library - Hopscotch.in</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/pure/grids-min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<!-- Include *at least* the core style and default theme -->
+	<link href="bower_components/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- Include required JS files for Syntax Highlighter -->
+	<script type="text/javascript" src="bower_components/SyntaxHighlighter/scripts/XRegExp.js"></script>
+	<script type="text/javascript" src="bower_components/SyntaxHighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="bower_components/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="bower_components/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+
+
+
+	<section class="header">
+
+		<div class="container">
+
+			<div class="pure-g">
+
+
+				<div class="pure-u-1-4">
+			    	<h3>HTML Email Documentation</h3>
+			    </div>
+
+			    <div class="pure-u-3-4 logo">
+
+			    	<img src="img/logo.png" alt="hopscotch-logo">
+
+			    </div>
+
+
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<div class="container">
+
+		<section class="module intro">
+
+			<div class="pure-g">
+
+			<div class="pure-u-1-4"></div>
+
+		    <div class="pure-u-1-2">
+
+		    	<div class="description">
+
+			    	<h2>Welcome</h2>
+			    	<p>This is a component library for the new HTML Emails for Hopscotch.in All the code below has to be added to the <code>blank_template</code> file available for download below. It should be between the <code>td</code> of the <code>table</code> with a class of <code>"body"</code>.</p>
+
+			    	<a href="Emails/partials/common.html" class="btn btn__primary">Download Common Template</a>
+
+		    	</div>
+
+		    </div>
+
+		</div>
+
+		</section>
+
+		<hr>
+
+		<section class="module">
+
+		<div class="pure-g">
+		    <div class="pure-u-1-4">
+
+		    	<div class="description">
+
+			    	<h2>0. Common</h2>
+			    	<p>Before the Email Header area we have a preheader. Yo Yo This will contain a hidden teaser message for the Gmail App preview and a add-to-contacts CTA.</p>
+
+		    	</div>
+
+		    </div>
+
+		    <div class="pure-u-3-4">
+		    	<div class="demo-container">
+		    		<iframe src="Emails/partials/common.html"></iframe>
+		    	</div>
+		    </div>
+
+		</div>
+
+		</section>
+
+		<section class="module">
+	      	<div class="pure-g">
+		        <div class="pure-u-1-4">
+
+		          <div class="description">
+
+		            <h2>1. Split Message</h2>
+		            <p>This is the header module for all emails. It has a bold headline and a logo to the left.</p>
+
+		          </div>
+
+		        </div>
+
+		        <div class="pure-u-3-4">
+		          <div class="demo-container">
+		            <iframe src="Emails/partials/message_split.html"></iframe>
+		          </div>
+
+		          <h2>Code:</h2>
+
+		          <pre class="brush: js">
+								<table class="row split-message">
+									<tr>
+										<td class="wrapper">
+											<table class="six columns">
+												<tr>
+													<td class="wrap">
+														<h4>Details</h4>
+														<p class="split">
+															<span class="disblock">Expected delivery in 3-5 days</span>
+															<span class="disblock">Cash on Delivery: $555</span>
+														</p>
+														<hr>
+														<p class="split">
+															<span class="disblock">Order #: 0710139483</span>
+															<span class="disblock">Placed on: 10 Jul 2015</span>
+														</p>
+														<p class="btn__wrapper btn__inline">
+															<a href="#" class="btn--primary">Track Order</a>
+														</p>
+													</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+
+											<td class="wrapper">
+												<table class="six columns">
+													<tr>
+														<td class="wrap">
+															<h4>SHIP TO</h4>
+															<p> <span class="disblock">Tyranossaurus Rex </span>
+																	<span class="disblock">VIP Across from VIP </span>
+																	<span class="disblock">  Mumbai, Maharashtra </span>
+																	<span class="disblock">4000029</span>
+																	<span class="disblock">+91 12 1212 1212</span>
+															</p>
+														</td>
+															<td class="expander"></td>
+														</tr>
+													</table>
+											</td>
+										</tr>
+								</table><!--/ .split-message -->
+		          </pre>
+		        </div>
+	    	</div>
+		</section>
+
+		<section class="module">
+	      	<div class="pure-g">
+		        <div class="pure-u-1-4">
+
+		          <div class="description">
+
+		            <h2>2. Cart Summary</h2>
+		            <p>This is the header module for all emails. It has a bold headline and a logo to the left.</p>
+
+		          </div>
+
+		        </div>
+
+		        <div class="pure-u-3-4">
+		          <div class="demo-container">
+		            <iframe src="Emails/partials/cart.html"></iframe>
+		          </div>
+
+		          <h2>Code:</h2>
+
+		          <pre class="brush: js">
+								<table class="row cart cart__header hide-for-small">
+									<tr>
+										<td class="wrapper">
+
+											<table class="nine columns">
+												<tr>
+													<td class="wrap">
+														Items
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+
+										 <td class="wrapper">
+											<table class="three columns">
+												<tr>
+													<td class="four sub-columns wrap qty">
+														Qty
+													</td>
+													<td class="eight sub-columns last wrap alignright">
+														Subtotal
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+
+								<table class="row cart cart__product">
+									<tr>
+										<td class="wrapper">
+											<table class="three columns">
+												<tr>
+													<td class="wrap img__wrap">
+														<img class="cart__product__image" src="http://static.hopscotch.in/fstatic/product/201509/9bc4069a-176b-4cac-9bb2-a88f3996c308_full.jpg?version=1442832097950">
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper">
+											<table class="six columns">
+												<tr>
+													<td class="wrap desc__wrap">
+														<span class="disblock">Unisex Oxford Shoes-Navy</span>
+
+														<span class="details smallish-text">
+															<span class="disblock">Colour: Blue </span>
+															<span class="disblock">Size: 8 (7-8 years)</span>
+														</span>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+
+										<td class="wrapper">
+											<table class="three columns">
+												<tr>
+													<td class="four sub-columns wrap">
+														<span class="show-for-small bold">Qty </span>1
+													</td>
+													<td class="eight sub-columns last wrap alignright">
+														<span class="show-for-small bold">Price </span>&#x20B9; 799
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+		          </pre>
+		        </div>
+	    	</div>
+		</section>
+
+		<section class="module">
+	      	<div class="pure-g">
+		        <div class="pure-u-1-4">
+
+		          <div class="description">
+
+		            <h2>3. Primary CTA</h2>
+		            <p>This is the header module for all emails. It has a bold headline and a logo to the left.</p>
+
+		          </div>
+
+		        </div>
+
+		        <div class="pure-u-3-4">
+		          <div class="demo-container">
+		            <iframe src="Emails/partials/primary_cta.html"></iframe>
+		          </div>
+
+		          <h2>Code:</h2>
+
+		          <pre class="brush: js">
+								<table class="row cta">
+									<tr>
+										<td class="wrapper last">
+											<table class="twelve columns">
+												<tr>
+													<td class="center">
+														<!-- Content -->
+														<center>
+															<p class="btn__wrapper center"><a href="#" class="btn--primary">OPEN SHOPPING CART</a></p>
+													 </center>
+													</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+								</table>
+		          </pre>
+		        </div>
+	    	</div>
+		</section>
+
+		<section class="module">
+	      	<div class="pure-g">
+		        <div class="pure-u-1-4">
+
+		          <div class="description">
+
+		            <h2>4. Share CTA</h2>
+		            <p>This is the header module for all emails. It has a bold headline and a logo to the left.</p>
+
+		          </div>
+
+		        </div>
+
+		        <div class="pure-u-3-4">
+		          <div class="demo-container">
+		            <iframe src="Emails/partials/share.html"></iframe>
+		          </div>
+
+		          <h2>Code:</h2>
+
+		          <pre class="brush: js">
+								<table class="container share">
+			            <tr>
+			              <td>
+			                <table class="row cta">
+			                  <tr>
+			                    <td class="wrapper last">
+
+			                      <table class="twelve columns">
+			                        <tr>
+			                          <td class="center">
+			                            <!-- Content -->
+			                            <center>
+			                              <h4 class="center"> <span class="share__heart"></span>  SHARE THE LOVE, EARN ALL THE CREDIT! <span class="share__heart"></span></h4>
+			                              <p class="smallish-text center">
+			                                <span class="disblock">Get upto Rs. 500 when friends you invite register.</span>
+			                                <span class="disblock">And another Rs. 500 when they shop within the first 30 days*</span>
+			                              <span class="small-text">*Minimum spend Rs. 1500</span></p>
+			                           </center>
+			                          </td>
+			                            <td class="expander"></td>
+			                          </tr>
+			                        </table>
+			                      </td>
+			                    </tr>
+			                </table>
+			              </td>
+			            </tr>
+			          </table><!-- /.share -->
+		          </pre>
+		        </div>
+	    	</div>
+		</section>
+
+		<section class="module">
+					<div class="pure-g">
+						<div class="pure-u-1-4">
+
+							<div class="description">
+
+								<h2>5. Product Cards (suggestions)</h2>
+								<p>This is the header module for all emails. It has a bold headline and a logo to the left.</p>
+
+							</div>
+
+						</div>
+
+						<div class="pure-u-3-4">
+							<div class="demo-container">
+								<iframe src="Emails/partials/suggestions.html"></iframe>
+							</div>
+
+							<h2>Code:</h2>
+
+							<pre class="brush: js">
+								<table class="container suggestions">
+		              <tr>
+		                <td>
+		                  <table class="row">
+		                      <tr>
+		                        <td class="wrapper center last">
+		                          <table class="twelve columns">
+		                            <tr>
+		                              <td class="four sub-columns">
+		                                <img src="http://hopscotch.thedigitalmonk.in/line.png" class="line" />
+		                              </td>
+		                              <td class="four sub-columns suggestions__header">
+		                                  <div>OR YOU MIGHT LIKE</div>
+		                              </td>
+		                            <td class="four sub-columns last">
+		                              <img src="http://hopscotch.thedigitalmonk.in/line.png" class="line" />
+		                            </td>
+		                                <td class="expander"></td>
+		                          </tr>
+		                        </table>
+		                      </td>
+		                    </tr>
+		                  </table>
+
+		                  <table class="row">
+		                      <tr>
+		                        <td class="wrapper">
+		                          <table class="six columns product">
+		                            <tr>
+		                              <td>
+		                                <img class="product__image" src="http://static.hopscotch.in/fstatic/product/201511/c63b8347-faaa-4b85-b6b5-29408674f28a_full.jpg?version=1447392730523" class="line" />
+		                                <span class="product__name">OshKosh B'gosh</span>
+		                                <span class="product__desc">Faux Suedee Boots - Pink</span>
+		                                <span class="product__price">&#x20B9; 1,949 <s>&#x20B9; 3,000</s>  </span>
+		                              </td>
+		                              <td class="expander"></td>
+		                          </tr>
+		                        </table>
+		                      </td>
+		                      <td class="wrapper last">
+		                        <table class="six columns product">
+		                          <tr>
+		                            <td>
+		                              <img class="product__image" src="http://static.hopscotch.in/fstatic/product/201511/6db5e888-ba94-44cd-9e67-b69034a41003_full.jpg?version=1447913848679" class="line" />
+		                              <span class="product__name">OshKosh B'gosh</span>
+		                              <span class="product__desc">Faux Suedee Boots - Pink</span>
+		                              <span class="product__price">&#x20B9; 1,949 <s>&#x20B9; 3,000</s>  </span>
+		                            </td>
+		                            <td class="expander"></td>
+		                        </tr>
+		                      </table>
+		                    </td>
+		                    </tr>
+		                  </table>
+
+		                  <table class="row">
+		                      <tr>
+		                        <td class="wrapper">
+		                          <table class="six columns product">
+		                            <tr>
+		                              <td>
+		                                <img class="product__image" src="http://static.hopscotch.in/fstatic/product/201511/c63b8347-faaa-4b85-b6b5-29408674f28a_full.jpg?version=1447392730523" class="line" />
+		                                <span class="product__name">OshKosh B'gosh</span>
+		                                <span class="product__desc">Faux Suedee Boots - Pink</span>
+		                                <span class="product__price">&#x20B9; 1,949 <s>&#x20B9; 3,000</s> </span>
+		                              </td>
+		                              <td class="expander"></td>
+		                          </tr>
+		                        </table>
+		                      </td>
+		                      <td class="wrapper last">
+		                        <table class="six columns product">
+		                          <tr>
+		                            <td>
+		                              <img class="product__image" src="http://static.hopscotch.in/fstatic/product/201511/6db5e888-ba94-44cd-9e67-b69034a41003_full.jpg?version=1447913848679" class="line" />
+		                              <span class="product__name">OshKosh B'gosh</span>
+		                              <span class="product__desc">Faux Suedee Boots - Pink</span>
+		                              <span class="product__price">&#x20B9; 1,949 <s>&#x20B9; 3,000</s></span>
+		                            </td>
+		                            <td class="expander"></td>
+		                        </tr>
+		                      </table>
+		                    </td>
+		                    </tr>
+		                  </table>
+
+		                </td>
+		              </tr>
+		            </table><!--/ .suggestions -->
+							</pre>
+						</div>
+				</div>
+		</section>
+
+	</div>
+
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+
+
+</body>
+</html>

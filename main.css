@@ -1,0 +1,45 @@
+/* line 1, sass/_sections.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* line 8, sass/_sections.scss */
+.intro {
+  text-align: center;
+}
+
+/* line 12, sass/_sections.scss */
+iframe {
+  width: 100%;
+  min-height: 500px;
+}
+
+/* line 17, sass/_sections.scss */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 22, sass/_sections.scss */
+.header {
+  background-color: #e6e6e6;
+  padding: 48px 24px;
+  color: #6c6c6c;
+}
+/* line 27, sass/_sections.scss */
+.header .logo {
+  text-align: right;
+}
+
+/* line 32, sass/_sections.scss */
+.module {
+  padding: 48px 0;
+}
+
+/* line 36, sass/_sections.scss */
+.description {
+  padding-right: 24px;
+}

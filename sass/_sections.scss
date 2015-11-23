@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.intro {
+	text-align: center;
+}
+
+iframe {
+	width: 100%;
+	min-height: 500px;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: $light-gray;
+	padding: 48px 24px;
+	color: $dark-gray;
+
+	.logo {
+		text-align: right;
+	}
+}
+
+.module {
+	padding: 48px 0;
+}
+
+.description {
+	padding-right: 24px;
+}

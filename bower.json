@@ -1,0 +1,27 @@
+{
+  "name": "bowercomp",
+  "authors": [
+    "thedigitalmonk <hello@thedigitalmonk.in>"
+  ],
+  "description": "contains all dependencies needed to run this prj",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "html",
+    "assets"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.6.0",
+    "SyntaxHighlighter": "~3.0.83"
+  }
+}
